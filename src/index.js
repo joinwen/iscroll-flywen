@@ -1,4 +1,4 @@
 function test() {
-  console.log("hi");
+  console.log('hi');
 }
 export default test;

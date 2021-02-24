@@ -4,17 +4,10 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ["eslint:recommended", "prettier"],
-  plugins: ["prettier"],
+  extends: ["eslint:recommended", "plugin:prettier/recommended"],
   parserOptions: {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  rules: {
-    "prettier/prettier": "error",
-    indent: ["error", 2],
-    "linebreak-style": ["error", "windows"],
-    quotes: ["error", "double"],
-    semi: ["error", "always"],
-  },
+  ignorePatterns: ["/dist/*.js"],
 };
